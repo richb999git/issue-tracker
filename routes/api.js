@@ -194,17 +194,3 @@ module.exports = function (app) {
     
 };
 
-
-/* 
-{
-    "_id" : ObjectId("5bf1af5cc4add850028c01b2"),
-    "issue_title" : "Title",
-    "issue_text" : "text",
-    "created_by" : "Functional Test - Every field filled in",
-    "assigned_to" : "",
-    "status_text" : "",
-    "created_on" : ISODate("2018-11-18T18:28:44.339Z"),
-    "updated_on" : ISODate("2018-11-18T18:28:44.339Z"),
-    "open" : true
-}
-*/

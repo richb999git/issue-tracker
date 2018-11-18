@@ -10,11 +10,11 @@
   </head>
   <body>
     <header>
-      <h1>
+      <h1 style="margin: 0px;">
         ISQA_4 - Issue Tracker
       </h1>
     </header>
-    <div id="userstories" style="margin-left: 5%; margin-top: 5%">
+    <div id="userstories" style="margin-left: 5%; margin-top: 1%">
       <h3>User Stories</h3>
       <ol>
         <li>Prevent cross site scripting(XSS attack).</li>
@@ -27,18 +27,18 @@
         <li>All 11 functional tests are complete and passing.</li>
       </ol>
       <br>
-      <h3>Example get usage:</h3>
+      <h3 style="margin-bottom: 2px;">Example get usage:</h3>
       <code>/api/issues/{project}</code><br>
       <code>/api/issues/{project}?open=true&amp;assigned_to=Joe</code><br>
-      <h3>Example return:</h3>
+      <h3 style="margin-bottom: 2px;">Example return:</h3>
       <code>[{"_id":"5871dda29faedc3491ff93bb","issue_title":"Fix error in posting data","issue_text":"When we post data it has an error.","created_on":"2017-01-08T06:35:14.240Z","updated_on":"2017-01-08T06:35:14.240Z","created_by":"Joe","assigned_to":"Joe","open":true,"status_text":"In QA"},...]</code>
       <br><br>
-      <h2><a href="/apitest/">EXAMPLE: Go to <i>/apitest/</i> project issues</a></h2>
+      <h2><a href="/apitest/" style="color: blue;">EXAMPLE: Go to <i>/apitest/</i> project issues</a></h2>
     </div>
     <hr style="margin: 20px; background-color: blue; color: blue; border-color: blue;">
     <div id="testui" style="margin-left: 5%; color: blue">
       <h2 style="text-align: left">API Tests:</h2>
-      <h3>Submit issue on <i>apitest</i></h3>
+      <h3>Submit issue on project <i>apitest</i></h3>
       <form id="testForm" class="border">
         <input type="text" name="issue_title" placeholder="*Title" style="width: 100px" required><br>
         <textarea type="text" name="issue_text" placeholder="*Text" style="width: 100px" required></textarea><br>
@@ -47,7 +47,7 @@
         <input type="text" name="status_text" placeholder="(opt)Status text" style="width: 100px"><br>
         <button type="submit">Submit Issue</button>
       </form><br>
-      <h3>Update issue on <i>apitest</i> (Change any or all to update issue on the _id supplied)</h3>
+      <h3>Update issue on project <i>apitest</i> (Change any or all to update issue on the _id supplied)</h3>
       <form id="testForm2" class="border">
         <input type="text" name="_id" placeholder="*_id" style="width: 100px" required><br>
         <input type="text" name="issue_title" placeholder="(opt)Title" style="width: 100px"><br>
@@ -58,7 +58,7 @@
         <label><input type="checkbox" name="open" value=false> Check to close issue</label><br>
         <button type="submit">Submit Issue</button>
       </form><br>
-      <h3>Delete issue on <i>apitest</i></h3>
+      <h3>Delete issue on project <i>apitest</i></h3>
       <form id="testForm3" class="border">  <!-- id was testForm2 which seems like an error so I changed it to testForm3 -->
         <input type="text" name="_id" placeholder="_id" style="width: 100px" required><br>
         <button type="submit">Delete Issue</button>
